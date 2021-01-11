@@ -1,5 +1,9 @@
 import Shop from "./components/Shop";
 
+const itemList = props.items.map(item => (
+  <Shop id={item.id} name={item.name} completed={item.completed} />
+));
+
 function App(props) {
   return (
     <div className="shopapp stack-large">
@@ -42,58 +46,11 @@ function App(props) {
         3 items remaining
       </h2>
       <ul
-        role="list"
-        className="shopping-list stack-large stack-exception"
-        aria-labelledby="list-heading"
-      />
-        <li className="shopstack-small">
-          <div className="c-cb">
-            <input id="shop-0" type="checkbox" defaultChecked={true} />
-            <label className="shop-label" htmlFor="shop-0">
-              Item1
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn">
-              Edit <span className="visually-hidden">Item1</span>
-            </button>
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">Item1</span>
-            </button>
-          </div>
-        </li>
-        <li className="shop stack-small">
-          <div className="c-cb">
-            <input id="shop-1" type="checkbox" />
-            <label className="shop-label" htmlFor="shop-1">
-              Item2
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn">
-              Edit <span className="visually-hidden">Item2</span>
-            </button>
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">Item2</span>
-            </button>
-          </div>
-        </li>
-        <li className="shop stack-small">
-          <div className="c-cb">
-            <input id="shop-2" type="checkbox" />
-            <label className="shop-label" htmlFor="shop-2">
-              Item3
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn">
-              Edit <span className="visually-hidden">Item3</span>
-            </button>
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">Item3</span>
-            </button>
-          </div>
-        </li>
+      role="list"
+      className="shopping-list stack-large stack-exception"
+      aria-labelledby="list-heading"
+      >
+        {itemList}
       </ul>
     </div>
   );

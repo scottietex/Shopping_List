@@ -1,3 +1,5 @@
+import Shop from "./components/Shop";
+
 function App(props) {
   return (
     <div className="shopapp stack-large">
@@ -43,7 +45,7 @@ function App(props) {
         role="list"
         className="shopping-list stack-large stack-exception"
         aria-labelledby="list-heading"
-      >
+      />
         <li className="shopstack-small">
           <div className="c-cb">
             <input id="shop-0" type="checkbox" defaultChecked={true} />

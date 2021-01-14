@@ -1,10 +1,9 @@
 import Shop from "./components/Shop";
 
-const itemList = props.items.map(item => (
-  <Shop id={item.id} name={item.name} completed={item.completed} />
-));
-
 function App(props) {
+  const itemList = props.items.map(item => (
+    <Shop id={item.id} name={item.name} completed={item.completed} />
+  ));
   return (
     <div className="shopapp stack-large">
       <h1>Shopping List</h1>

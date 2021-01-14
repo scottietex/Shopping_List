@@ -4,6 +4,9 @@ import FilterButton from "./components/FilterButton";
 import Shop from "./components/Shop";
 
 function App(props) {
+  function addItem(name) {
+    alert(name);
+  }
   const itemList = props.items.map(item => (
     <Shop 
       id={item.id} 
@@ -15,7 +18,7 @@ function App(props) {
   
   return (
     <div className="shopapp stack-large">
-      <Form />
+      <Form addItem={addItem} />
       <div className="filters btn-group stack-exception">
         <FilterButton />
         <FilterButton />

@@ -1,8 +1,13 @@
 import React from "react";
 
 function Form(props) {
+    function handleSubmit(e) {
+        e.preventDefault();
+        alert('Item Added!');
+      }
+
     return (
-      <form>
+      <form onSubmit={handleSubmit}>
         <h2 className="label-wrapper">
           <label htmlFor="new-shop-input" className="label__lg">
             What do you need to get?

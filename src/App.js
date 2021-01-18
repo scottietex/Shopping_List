@@ -1,13 +1,17 @@
-import React from "react";
+import { nanoid } from "nanoid";
+import React, { useState } from "react";
 import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
 import Shop from "./components/Shop";
 
 function App(props) {
+  const [items, setItems] = useState(props.items);
   function addItem(name) {
-    alert(name);
-  }
-  const itemList = props.items.map(item => (
+    const newItem = { id: "shop-" + nanoid(), name: name, completed: false };
+    setItems([...items, newItem]);
+  };
+
+  const itemList = items.map(item => (
     <Shop 
       id={item.id} 
       name={item.name} 

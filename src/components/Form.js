@@ -9,8 +9,9 @@ function Form(props) {
     function handleSubmit(e) {
         e.preventDefault();
         if (name==='') return;
-        props.addItem("Item Added!");
-        setName("");
+        props.addItem(name);
+        setName('');
+        alert("Item added!")
       }
 
     return (

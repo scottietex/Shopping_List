@@ -11,12 +11,29 @@ function App(props) {
     setItems([...items, newItem]);
   };
 
+  function toggleItemCompleted(id) {
+    const updatedItems = items.map(item => {
+      if (id === item.id) {
+        return {...item, completed: !item.completed}
+      }
+      return item;
+    });
+    setItems(updatedItems);
+  }
+
+  function deleteItem(id) {
+    const remainingItems = items.filter(item => id !== item.id);
+    setItems(remainingItems);
+  }
+
   const itemList = items.map(item => (
     <Shop 
       id={item.id} 
       name={item.name} 
       completed={item.completed}
-      key={item.id} 
+      key={item.id}
+      toggleItemCompleted={toggleItemCompleted} 
+      deleteItem={deleteItem}
     />
   ));
   

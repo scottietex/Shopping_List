@@ -20,6 +20,9 @@ function App(props) {
     />
   ));
   
+  const itemsNoun = itemList.length !== 1 ? 'items' : 'item';
+  const headingText = `${itemList.length} ${itemsNoun} remaining`;
+
   return (
     <div className="shopapp stack-large">
       <Form addItem={addItem} />
@@ -28,7 +31,7 @@ function App(props) {
         <FilterButton />
         <FilterButton />
       </div>
-      <h2 id="list-heading">3 items remaining</h2>
+      <h2 id="list-heading">{headingText}</h2>
       <ul
         role="list"
         className="shop-list stack-large stack-exception"

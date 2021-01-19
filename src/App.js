@@ -26,6 +26,17 @@ function App(props) {
     setItems(remainingItems);
   }
 
+  function editItem(id, newName) {
+    const editedItemList = items.map(item => {
+      if (id === item.id) {
+        //
+        return {...item, name: newName}
+      }
+      return item;
+    });
+    setItems(editedItemList);
+  }
+
   const itemList = items.map(item => (
     <Shop 
       id={item.id} 
@@ -34,6 +45,7 @@ function App(props) {
       key={item.id}
       toggleItemCompleted={toggleItemCompleted} 
       deleteItem={deleteItem}
+      editItem={editItem}
     />
   ));
   

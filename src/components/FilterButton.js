@@ -1,5 +1,6 @@
 import React from "react";
 
+/* Filter button function */
 function FilterButton(props) {
   return (
     <button
@@ -10,7 +11,7 @@ function FilterButton(props) {
     >
       <span className="visually-hidden">Show </span>
       <span>{props.name}</span>
-      <span className="visually-hidden"> tasks</span>
+      <span className="visually-hidden"> items</span>
     </button>
   );
 }

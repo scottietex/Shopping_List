@@ -1,3 +1,9 @@
+Shopping List
+
+User Story 1: As a shopper, I want to create a list to keep track of the groceries I need.
+User Story 2: As a shopper, I want to filter items I have in my cart from items I still need to buy.
+User Story 3: As a shopper, I want to edit items in my list if I need to make changes.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

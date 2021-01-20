@@ -11,8 +11,7 @@
 html {
   font: 62.5% / 1.15 sans-serif;
 }
-h1,
-h2 {
+h1,h2 {
   margin-bottom: 0;
 }
 ul {
@@ -36,18 +35,13 @@ button {
 button::-moz-focus-inner {
   border: 0;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
-button,
-input {
+button, input {
   overflow: visible;
 }
 input[type="text"] {
@@ -67,6 +61,7 @@ body {
     line-height: 1.31579;
   }
 }
+
 /*END RESETS*/
 /* GLOBAL STYLES */
 .form-group > input[type="text"] {
@@ -204,7 +199,7 @@ body {
   width: 100%;
   margin: unset auto;
 }
-/* Todo item styles */
+/* Shopping item styles */
 .shop {
   display: flex;
   flex-direction: row;

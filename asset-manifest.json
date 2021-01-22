@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/scottietex.github.io-ShoppingList/static/css/main.c97112c8.chunk.css",
-    "main.js": "/scottietex.github.io-ShoppingList/static/js/main.e9a8e6b4.chunk.js",
-    "main.js.map": "/scottietex.github.io-ShoppingList/static/js/main.e9a8e6b4.chunk.js.map",
-    "runtime-main.js": "/scottietex.github.io-ShoppingList/static/js/runtime-main.4875681c.js",
-    "runtime-main.js.map": "/scottietex.github.io-ShoppingList/static/js/runtime-main.4875681c.js.map",
-    "static/js/2.a5ebd53f.chunk.js": "/scottietex.github.io-ShoppingList/static/js/2.a5ebd53f.chunk.js",
-    "static/js/2.a5ebd53f.chunk.js.map": "/scottietex.github.io-ShoppingList/static/js/2.a5ebd53f.chunk.js.map",
-    "static/js/3.46ae002b.chunk.js": "/scottietex.github.io-ShoppingList/static/js/3.46ae002b.chunk.js",
-    "static/js/3.46ae002b.chunk.js.map": "/scottietex.github.io-ShoppingList/static/js/3.46ae002b.chunk.js.map",
-    "index.html": "/scottietex.github.io-ShoppingList/index.html",
-    "static/css/main.c97112c8.chunk.css.map": "/scottietex.github.io-ShoppingList/static/css/main.c97112c8.chunk.css.map",
-    "static/js/2.a5ebd53f.chunk.js.LICENSE.txt": "/scottietex.github.io-ShoppingList/static/js/2.a5ebd53f.chunk.js.LICENSE.txt"
+    "main.css": "./static/css/main.c97112c8.chunk.css",
+    "main.js": "./static/js/main.e9a8e6b4.chunk.js",
+    "main.js.map": "./static/js/main.e9a8e6b4.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e13692ea.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e13692ea.js.map",
+    "static/js/2.a5ebd53f.chunk.js": "./static/js/2.a5ebd53f.chunk.js",
+    "static/js/2.a5ebd53f.chunk.js.map": "./static/js/2.a5ebd53f.chunk.js.map",
+    "static/js/3.46ae002b.chunk.js": "./static/js/3.46ae002b.chunk.js",
+    "static/js/3.46ae002b.chunk.js.map": "./static/js/3.46ae002b.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.c97112c8.chunk.css.map": "./static/css/main.c97112c8.chunk.css.map",
+    "static/js/2.a5ebd53f.chunk.js.LICENSE.txt": "./static/js/2.a5ebd53f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4875681c.js",
+    "static/js/runtime-main.e13692ea.js",
     "static/js/2.a5ebd53f.chunk.js",
     "static/css/main.c97112c8.chunk.css",
     "static/js/main.e9a8e6b4.chunk.js"
